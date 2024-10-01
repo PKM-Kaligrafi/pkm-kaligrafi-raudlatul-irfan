@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ShopCard({ item }) {
   return (
     <div className="font-ptserif">
-      <div className="relative flex aspect-[3/4] w-36 items-end justify-end rounded-2xl bg-[#092928] md:w-80">
+      <div className="relative flex aspect-[5/6] w-14 items-end justify-end rounded-2xl bg-[#092928] md:w-80">
         <Image
           src="/webp/caligraphy01.webp"
           width={100}

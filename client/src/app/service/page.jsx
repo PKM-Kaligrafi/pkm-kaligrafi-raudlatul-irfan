@@ -10,12 +10,12 @@ export default function Service() {
           <Image
             src="/webp/rapat02.webp"
             alt="img landSevice"
-            className="aspect-[16/11] w-4/5 rounded-e-2xl md:w-1/2 md:rounded-e-3xl"
-            width={50}
+            className="aspect-[16/11] w-4/6 rounded-e-2xl md:w-1/2 md:rounded-e-3xl"
+            width={1000}
             height={100}
           />
           <div className="flex w-1/2 items-center justify-center">
-            <h1 className="item-center justify-center font-ptserif text-xl font-black md:text-3xl">
+            <h1 className="item-center justify-center font-ptserif text-xs font-black md:text-3xl">
               Service Part
             </h1>
           </div>
@@ -36,11 +36,11 @@ export default function Service() {
 
           <div
             id="contTop"
-            className="flex flex-col items-center gap-5 md:flex-row md:justify-center md:gap-16"
+            className="flex flex-col items-center mx-4 gap-5 md:flex-row md:justify-center md:gap-28 md:mx-10"
           >
             <div
               id="listTop1"
-              className="mt-14 flex justify-center gap-20 md:gap-16"
+              className="mt-14 flex justify-center gap-20 md:gap-28"
             >
               <TopValue
                 img="booking.svg"
@@ -51,22 +51,22 @@ export default function Service() {
               <TopValue
                 img="best-price.svg"
                 title="Best Price"
-                p1="Quick and easy booking of"
-                p2="tours for upcoming dates"
+                p1="Unbeatable deals,"
+                p2="guaranteed value"
               />
             </div>
-            <div id="listTop2" className="mt-14 flex gap-20 md:gap-16">
+            <div id="listTop2" className="mt-14 flex gap-20 md:gap-28">
               <TopValue
                 img="quality.svg"
                 title="Quality"
-                p1="Quick and easy booking of"
-                p2="tours for upcoming dates"
+                p1="Premium products,"
+                p2="crafted with care"
               />
               <TopValue
                 img="by-request.svg"
                 title="By Request"
-                p1="Quick and easy booking of"
-                p2="tours for upcoming dates"
+                p1="Tailored to your needs,"
+                p2="just ask"
               />
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Service() {
           >
             <div
               id="contTitle"
-              className="flex flex-col items-center md:items-start"
+              className="flex flex-col items-center md:items-start md:mx-10"
             >
               <a className="font-ptserif text-2xl font-black">Contact Us!</a>
               <p className="item-center justify-center font-ptserif text-xs font-light tracking-wide">
@@ -87,7 +87,7 @@ export default function Service() {
 
             <div
               id="contInfo"
-              className="flex flex-col items-center justify-center gap-4 md:flex md:w-2/3 md:flex-row md:gap-0 md:rounded-full md:border-2 md:border-[#092928] md:p-5"
+              className="flex flex-col items-center justify-center gap-10 md:flex md:w-2/3 md:flex-row md:gap-0 md:rounded-full md:border-2 md:border-[#092928] md:p-5"
             >
               <div
                 id="contPhone"
