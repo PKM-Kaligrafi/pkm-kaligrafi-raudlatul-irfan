@@ -120,6 +120,45 @@ const ContentReview = () => {
                         className="aspect-square w-32 rounded-lg md:w-28"
                     />
                     <div className="flex flex-col gap-3">
+                        <div className="my-4 me-4 flex flex-col items-end justify-between md:my-3 md:me-3">
+                            <div className="flex items-end">
+                            <Image
+                            src="/svg/icon/star-yellow.svg"
+                            alt="img star"
+                            className="w-8 p-1"
+                            width={5}
+                            height={5}
+                            />
+                            <Image
+                            src="/svg/icon/star-yellow.svg"
+                            alt="img star"
+                            className="w-8 p-1"
+                            width={5}
+                            height={5}
+                            />
+                            <Image
+                            src="/svg/icon/star-yellow.svg"
+                            alt="img star"
+                            className="w-8 p-1"
+                            width={5}
+                            height={5}
+                            />
+                            <Image
+                            src="/svg/icon/star-yellow.svg"
+                            alt="img star"
+                            className="w-8 p-1"
+                            width={5}
+                            height={5}
+                            />
+                            <Image
+                            src="/svg/icon/star-grey.svg"
+                            alt="img star"
+                            className="w-8 p-1"
+                            width={5}
+                            height={5}
+                            />
+                            </div>
+                        </div>
                         <h1 className="font-ptserif text-base font-black">
                         User1289281828
                         </h1>
@@ -128,45 +167,6 @@ const ContentReview = () => {
                                 Kualitas gambar bagus banget, detail sangat oke, tapi nunggunya sebulan.
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div className="absolute top-0 right-0 my-4 me-4 flex flex-col items-end justify-between md:my-3 md:me-3">
-                    <div className="flex items-end">
-                    <Image
-                    src="/svg/icon/star-yellow.svg"
-                    alt="img star"
-                    className="w-8 p-1"
-                    width={5}
-                    height={5}
-                    />
-                    <Image
-                    src="/svg/icon/star-yellow.svg"
-                    alt="img star"
-                    className="w-8 p-1"
-                    width={5}
-                    height={5}
-                    />
-                    <Image
-                    src="/svg/icon/star-yellow.svg"
-                    alt="img star"
-                    className="w-8 p-1"
-                    width={5}
-                    height={5}
-                    />
-                    <Image
-                    src="/svg/icon/star-yellow.svg"
-                    alt="img star"
-                    className="w-8 p-1"
-                    width={5}
-                    height={5}
-                    />
-                    <Image
-                    src="/svg/icon/star-grey.svg"
-                    alt="img star"
-                    className="w-8 p-1"
-                    width={5}
-                    height={5}
-                    />
                     </div>
                 </div>
             </div>
