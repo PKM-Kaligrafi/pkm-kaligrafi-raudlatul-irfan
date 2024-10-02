@@ -19,17 +19,15 @@ export default function Shop(key) {
 
     fetchItems();
   }, []);
-  
+
   console.log(items);
 
   return (
     <div className="flex flex-col">
-      {items.map((item) => (
-      <SearchBar key={item.id} item={item}/>
-    ))}
-      <div className="mt-8 grid grid-cols-2 place-items-center gap-4 md:grid-cols-4 md:gap-10">
+      <SearchBar />
+      <div className="mx-3 mt-8 grid grid-cols-2 place-items-center gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
         {items.map((item) => (
-          <ShopCard key={item.id} item={item}/>
+          <ShopCard key={item.id} item={item} />
         ))}
       </div>
     </div>
