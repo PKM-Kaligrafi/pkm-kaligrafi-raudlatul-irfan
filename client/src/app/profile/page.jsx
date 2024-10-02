@@ -52,7 +52,7 @@ const Profile = () => {
     <>
       <div className="mx-6 flex flex-col gap-10 font-ptserif md:justify-center md:px-5 lg:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:gap-10 lg:gap-14">
-          <div className="flex flex-row justify-center md:flex-col md:gap-5">
+          <div className="flex flex-row justify-center gap-2 md:flex-col md:gap-5">
             <div className="aspect-square w-48 min-w-48 rounded-3xl bg-[#014E3E] md:w-64">
               {/* Profile Picture */}
             </div>
@@ -83,14 +83,14 @@ const Profile = () => {
                 <div className="text-lg font-semibold md:text-2xl">Address</div>
               </div>
 
-              {/* <div className="flex flex-col gap-5 border-l-2 border-black py-8 ps-8 md:py-5 md:ps-12">
-                <div className="md:text-xl">{userData.username}</div>
-                <div className="md:text-xl">{userData.email}</div>
-                <div className="md:text-xl">{userData.no_telp}</div>
-                <div className="md:text-xl">{userData.address}</div>
-              </div> */}
+              <div className="flex flex-col gap-5 border-l-2 border-black py-8 ps-8 md:py-5 md:ps-12">
+                <div className="md:text-xl">{userData[0].username}</div>
+                <div className="md:text-xl">{userData[0].email}</div>
+                <div className="md:text-xl">{userData[0].no_telp}</div>
+                <div className="md:text-xl">{userData[0].address}</div>
+              </div>
 
-              {userData.map((userData, index) => (
+              {/* {userData.map((userData, index) => (
                 <div
                   key={index}
                   className="flex flex-col gap-5 border-l-2 border-black py-8 ps-8 md:py-5 md:ps-12"
@@ -100,7 +100,7 @@ const Profile = () => {
                   <div className="md:text-xl">{userData.no_telp}</div>
                   <div className="md:text-xl">{userData.address}</div>
                 </div>
-              ))}
+              ))} */}
             </div>
             <div className="md:flex md:pt-5">
               <div className="hidden justify-center md:flex md:justify-center md:text-2xl">
@@ -121,7 +121,7 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className="mx-14 flex justify-around md:hidden md:w-56">
+          <div className="flex justify-center gap-5 md:hidden md:w-56">
             <button className="h-14 w-14 rounded-xl bg-[#E9B472]">Order</button>
             <button className="h-14 w-14 rounded-xl bg-[#E9B472]">Sent</button>
             <button className="h-14 w-14 rounded-xl bg-[#E9B472]">
