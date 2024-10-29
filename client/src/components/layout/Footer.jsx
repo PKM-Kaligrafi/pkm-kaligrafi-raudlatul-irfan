@@ -10,6 +10,15 @@ export default function Footer() {
         </div>
         <div className="flex flex-row gap-16">
           <div className="flex flex-col items-center md:items-start">
+            {/* <h1 className="text-3xs md:text-base">Lorem Ipsum</h1> */}
+            <div className="flex flex-col -space-y-2 text-4xs items-center font-normal md:space-y-0 md:text-xs md:flex-row md:gap-20">
+              <p>Home</p>
+              <p>Service</p>
+              <p>About</p>
+              <p>Shop</p>
+            </div>
+          </div>
+          {/* <div className="hidden flex-col items-center md:flex md:items-start">
             <h1 className="text-3xs md:text-base">Lorem Ipsum</h1>
             <div className="flex flex-col -space-y-2 text-4xs font-normal md:space-y-0 md:text-xs">
               <p>Lorem Ipsum</p>
@@ -26,17 +35,8 @@ export default function Footer() {
               <p>Lorem Ipsum</p>
               <p>Lorem Ipsum</p>
             </div>
-          </div>
-          <div className="hidden flex-col items-center md:flex md:items-start">
-            <h1 className="text-3xs md:text-base">Lorem Ipsum</h1>
-            <div className="flex flex-col -space-y-2 text-4xs font-normal md:space-y-0 md:text-xs">
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
         <div className="hidden flex-col gap-4 md:flex">
           <div className="h-5 w-5 rounded-full bg-[#092928]"></div>
           <div className="h-5 w-5 rounded-full bg-[#092928]"></div>

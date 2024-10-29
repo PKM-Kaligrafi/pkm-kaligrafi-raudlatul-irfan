@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <div class="font-ptserif">
       <div class="px-10 py-40">
-        <div class="rounded-3xl bg-[#FFFFFF] p-2 text-center shadow-xl">
+        <div class="rounded-3xl justify-center items-center bg-[#FFFFFF] p-2 text-center shadow-xl">
           <div class="pt-12 text-xl font-bold">Login</div>
           <div class="pt-10">
             <input
