@@ -43,13 +43,7 @@ export default function AboutUs() {
               Raudlatul Irfan
             </h1>
             <p className="text-justify text-4xs md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Yayasan Raudlatul Irfan adalah lembaga pendidikan Islam yang berdedikasi untuk memberikan pendidikan berkualitas berbasis nilai-nilai Islami. Kami tidak hanya menyediakan pendidikan formal yang membentuk generasi berakhlak mulia, tetapi juga mendukung pengembangan seni kaligrafi melalui Workshop Kaligrafi Raudlatul Irfan. Karya kaligrafi kami telah diakui secara internasional, mencerminkan keahlian para pengrajin kami yang berbakat dan berkualitas tinggi. Melalui dedikasi pada pendidikan dan seni, kami berkomitmen untuk melestarikan nilai-nilai budaya Islam dan memperkenalkannya ke seluruh dunia
             </p>
           </div>
         </section>

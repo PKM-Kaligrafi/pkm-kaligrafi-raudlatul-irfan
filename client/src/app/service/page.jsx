@@ -100,7 +100,7 @@ export default function Service() {
                   width={40}
                   height={40}
                 />
-                <a className="text-md font-ptserif">: +62 812 345 6789</a>
+                <a className="text-md font-ptserif">: RaudlatulIrfan@gmail.com</a>
               </div>
               <div
                 id="contMail"
@@ -114,7 +114,7 @@ export default function Service() {
                   height={40}
                 />
                 <a className="text-md font-ptserif">
-                  : RaudlatulIrfan@gmail.com
+                  : +62 812 345 6789
                 </a>
               </div>
             </div>
