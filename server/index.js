@@ -10,6 +10,8 @@ const {
   deleteData,
   registerUser,
   loginUser,
+  wishlistUser,
+  cartUser,
 } = require("./firebase");
 
 const PORT = 3001;
@@ -35,6 +37,59 @@ app.post("/login", async (req, res) => {
     return res.json({ message: "User logged in successfully!", user });
   } else {
     return res.status(400).json({ message: "Login failed." });
+  }
+});
+
+app.post("/wishlist/post/:id", async (req, res) => {
+  console.log("POST /wishlist/post/:id called with id:", req.params.id);
+  const userId = req.params.id;
+
+  const { wishlist } = req.body;
+
+  try {
+    const response = await wishlistUser(userId, wishlist);
+    return res.json(response);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+app.get("/wishlist/get/:userId", async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const wishlistItems = await getDocs(collection(firestoreDB, `users/${userId}/wishlist`));
+    const wishlist = wishlistItems.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    return res.json(wishlist);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+app.post("/cart/post/:id", async (req, res) => {
+  console.log("POST /cart/post/:id called with id:", req.params.id);
+  const userId = req.params.id;
+
+  const { cart } = req.body;
+  if (!cart) {
+    return res.status(400).json({ error: "Cart is required." });
+  }
+
+  try {
+    const response = await cartUser(userId, cart);
+    return res.json(response);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+app.get("/cart/get/:userId", async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const cartItems = await getDocs(collection(firestoreDB, `users/${userId}/cart`));
+    const cart = cartItems.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    return res.json(cart);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
   }
 });
 

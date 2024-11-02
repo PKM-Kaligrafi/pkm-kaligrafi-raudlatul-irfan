@@ -66,6 +66,28 @@ const loginUser = async (email, password) => {
   }
 };
 
+const wishlistUser = async (userId, wishlist) => {
+  try {
+    const wishlistCollection = collection(firestoreDB, `users/${userId}/wishlist`);
+    await addDoc(wishlistCollection, wishlist);
+    return { message: "Wishlist item added successfully!" };
+  } catch (error) {
+    console.log("Error in adding wishlist item: ", error);
+  }
+};
+
+const cartUser = async (userId, cart) => {
+  try {
+    const cartCollection = collection(firestoreDB, `users/${userId}/cart`);
+    await addDoc(cartCollection, cart);
+    return { message: "cart item added successfully!" };
+  } catch (error) {
+    console.log("Error in adding cart item: ", error);
+    throw error;
+  }
+};
+
+
 const postData = async (data, collectionName) => {
   try {
     const document = await addDoc(collection(firestoreDB, collectionName), data);
@@ -133,4 +155,6 @@ module.exports = {
   deleteData,
   registerUser,
   loginUser,
+  wishlistUser,
+  cartUser,
 };
