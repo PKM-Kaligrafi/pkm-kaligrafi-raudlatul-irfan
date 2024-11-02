@@ -86,6 +86,17 @@ const cartUser = async (userId, cart) => {
   }
 };
 
+const orderUser = async (userId, order) => {
+  try {
+    const orderCollection = collection(firestoreDB, `users/${userId}/order`);
+    await addDoc(orderCollection, order);
+    return { message: "order item added successfully!" };
+  } catch (error) {
+    console.log("Error in adding cart order: ", error);
+    throw error;
+  }
+};
+
 
 const addKaligraphyItem = async (data) => {
   try {
@@ -175,6 +186,7 @@ module.exports = {
   loginUser,
   wishlistUser,
   cartUser,
+  orderUser,
   addKaligraphyItem,
   addReviewToKaligraphyItem,
 };

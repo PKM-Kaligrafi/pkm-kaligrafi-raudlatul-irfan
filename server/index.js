@@ -12,6 +12,7 @@ const {
   loginUser,
   wishlistUser,
   cartUser,
+  orderUser,
   addKaligraphyItem,
   addReviewToKaligraphyItem,
 } = require("./firebase");
@@ -90,6 +91,34 @@ app.get("/cart/get/:userId", async (req, res) => {
     const cartItems = await getDocs(collection(firestoreDB, `users/${userId}/cart`));
     const cart = cartItems.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
     return res.json(cart);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+app.post("/order/post/:id", async (req, res) => {
+  console.log("POST /order/post/:id called with id:", req.params.id);
+  const userId = req.params.id;
+
+  const { order } = req.body;
+  if (!order) {
+    return res.status(400).json({ error: "order is required." });
+  }
+
+  try {
+    const response = await orderUser(userId, order);
+    return res.json(response);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+app.get("/order/get/:userId", async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const orderItems = await getDocs(collection(firestoreDB, `users/${userId}/order`));
+    const order = orderItems.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    return res.json(order);
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
