@@ -7,7 +7,7 @@ export default function Rating({ item }) {
   
   return (
     <div className="mb-5 flex rounded-3xl shadow-[0_0px_10px_rgba(0,0,0,0.25)]">
-      <div className="m-5 flex w-full flex-row items-center gap-3">
+      <div className="m-5 flex w-full flex-row items-center gap-3 md:m-6 md:my-5 md:gap-6">
         <Image
           src={`/webp/${img}`}
           width={100}
