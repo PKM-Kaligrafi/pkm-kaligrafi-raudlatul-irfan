@@ -120,7 +120,7 @@ const ContentReview = () => {
                         className="aspect-square w-26 rounded-lg md:w-28"
                     />
                     <div className="flex flex-col gap-2">
-                        <h1 className="font-ptserif text-sm font-black md:text-base">
+                        <h1 className="line-clamp-1 font-ptserif text-sm font-black md:text-base">
                         User1289281828
                         </h1>
                         <div className="flex flex-row gap-2 tracking-wide">
@@ -179,7 +179,7 @@ const ContentReview = () => {
                         className="aspect-square w-26 rounded-lg md:w-28"
                     />
                     <div className="flex flex-col gap-2">
-                        <h1 className="font-ptserif text-sm font-black md:text-base">
+                        <h1 className="line-clamp-1 font-ptserif text-sm font-black md:text-base">
                         User1289281828
                         </h1>
                         <div className="flex flex-row gap-2 tracking-wide">
