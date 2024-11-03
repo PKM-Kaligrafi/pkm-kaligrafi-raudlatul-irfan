@@ -111,79 +111,20 @@ const ContentReview = () => {
           </div>
 
           <div id="review">
-            <div className="relative mb-4 flex h-56 rounded-3xl shadow-[0_0px_10px_rgba(0,0,0,0.25)]">
-                <div className="m-7 flex w-full flex-row items-center gap-6">
+          <div className="relative mb-4 flex rounded-3xl shadow-[0_0px_10px_rgba(0,0,0,0.25)]">
+                <div className="m-7 my-9 flex w-full flex-row items-center gap-5">
                     <Image
                         src="/webp/caligraphy01.webp"
                         width={100}
                         height={100}
-                        className="aspect-square w-32 rounded-lg md:w-28"
+                        className="aspect-square w-26 rounded-lg md:w-28"
                     />
-                    <div className="flex flex-col gap-3">
-                        <div className="my-4 me-4 flex flex-col items-end justify-between md:my-3 md:me-3">
-                            <div className="flex items-end">
-                            <Image
-                            src="/svg/icon/star-yellow.svg"
-                            alt="img star"
-                            className="w-8 p-1"
-                            width={5}
-                            height={5}
-                            />
-                            <Image
-                            src="/svg/icon/star-yellow.svg"
-                            alt="img star"
-                            className="w-8 p-1"
-                            width={5}
-                            height={5}
-                            />
-                            <Image
-                            src="/svg/icon/star-yellow.svg"
-                            alt="img star"
-                            className="w-8 p-1"
-                            width={5}
-                            height={5}
-                            />
-                            <Image
-                            src="/svg/icon/star-yellow.svg"
-                            alt="img star"
-                            className="w-8 p-1"
-                            width={5}
-                            height={5}
-                            />
-                            <Image
-                            src="/svg/icon/star-grey.svg"
-                            alt="img star"
-                            className="w-8 p-1"
-                            width={5}
-                            height={5}
-                            />
-                            </div>
-                        </div>
-                        <h1 className="font-ptserif text-base font-black">
+                    <div className="flex flex-col gap-2">
+                        <h1 className="font-ptserif text-sm font-black md:text-base">
                         User1289281828
                         </h1>
                         <div className="flex flex-row gap-2 tracking-wide">
-                            <p className="font-ptserif text-sm">
-                                Kualitas gambar bagus banget, detail sangat oke, tapi nunggunya sebulan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="relative mb-4 flex h-56 rounded-3xl shadow-[0_0px_10px_rgba(0,0,0,0.25)]">
-                <div className="m-7 flex w-full flex-row items-center gap-6">
-                    <Image
-                        src="/webp/caligraphy01.webp"
-                        width={100}
-                        height={100}
-                        className="aspect-square w-32 rounded-lg md:w-28"
-                    />
-                    <div className="flex flex-col gap-3">
-                        <h1 className="font-ptserif text-base font-black">
-                        User1289281828
-                        </h1>
-                        <div className="flex flex-row gap-2 tracking-wide">
-                            <p className="font-ptserif text-sm">
+                            <p className="line-clamp-3 font-ptserif text-xs md:text-sm">
                                 Kualitas gambar bagus banget, detail sangat oke, tapi nunggunya sebulan.
                             </p>
                         </div>
@@ -194,35 +135,95 @@ const ContentReview = () => {
                     <Image
                     src="/svg/icon/star-yellow.svg"
                     alt="img star"
-                    className="w-8 p-1"
+                    className="w-6 p-1"
                     width={5}
                     height={5}
                     />
                     <Image
                     src="/svg/icon/star-yellow.svg"
                     alt="img star"
-                    className="w-8 p-1"
+                    className="w-6 p-1"
                     width={5}
                     height={5}
                     />
                     <Image
                     src="/svg/icon/star-yellow.svg"
                     alt="img star"
-                    className="w-8 p-1"
+                    className="w-6 p-1"
                     width={5}
                     height={5}
                     />
                     <Image
                     src="/svg/icon/star-yellow.svg"
                     alt="img star"
-                    className="w-8 p-1"
+                    className="w-6 p-1"
                     width={5}
                     height={5}
                     />
                     <Image
                     src="/svg/icon/star-grey.svg"
                     alt="img star"
-                    className="w-8 p-1"
+                    className="w-6 p-1"
+                    width={5}
+                    height={5}
+                    />
+                    </div>
+                </div>
+            </div>
+            <div className="relative mb-4 flex rounded-3xl shadow-[0_0px_10px_rgba(0,0,0,0.25)]">
+                <div className="m-7 my-9 flex w-full flex-row items-center gap-5">
+                    <Image
+                        src="/webp/caligraphy01.webp"
+                        width={100}
+                        height={100}
+                        className="aspect-square w-26 rounded-lg md:w-28"
+                    />
+                    <div className="flex flex-col gap-2">
+                        <h1 className="font-ptserif text-sm font-black md:text-base">
+                        User1289281828
+                        </h1>
+                        <div className="flex flex-row gap-2 tracking-wide">
+                            <p className="line-clamp-3 font-ptserif text-xs md:text-sm">
+                              ashda jshd asg dhgda sag dsdhags dhagsdjha dhhhsgd h gsh ghbnbh jagdha sgdag sh jkgdasdga sdgas jdgashg dasgdhasgda ksgdagdashgda shkdga
+                                Kualitas gambar bagus banget, detail sangat oke, tapi nunggunya sebulan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="absolute top-0 right-0 my-4 me-4 flex flex-col items-end justify-between md:my-3 md:me-3">
+                    <div className="flex items-end">
+                    <Image
+                    src="/svg/icon/star-yellow.svg"
+                    alt="img star"
+                    className="w-6 p-1"
+                    width={5}
+                    height={5}
+                    />
+                    <Image
+                    src="/svg/icon/star-yellow.svg"
+                    alt="img star"
+                    className="w-6 p-1"
+                    width={5}
+                    height={5}
+                    />
+                    <Image
+                    src="/svg/icon/star-yellow.svg"
+                    alt="img star"
+                    className="w-6 p-1"
+                    width={5}
+                    height={5}
+                    />
+                    <Image
+                    src="/svg/icon/star-yellow.svg"
+                    alt="img star"
+                    className="w-6 p-1"
+                    width={5}
+                    height={5}
+                    />
+                    <Image
+                    src="/svg/icon/star-grey.svg"
+                    alt="img star"
+                    className="w-6 p-1"
                     width={5}
                     height={5}
                     />
