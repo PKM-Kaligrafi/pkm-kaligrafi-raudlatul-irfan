@@ -25,17 +25,19 @@ export default function Order({ item }) {
               <p className="font-ptserif text-sm font-black tracking-wide text-[#C6975D] md:text-lg">
                 Waiting
               </p>
-              <p className="font-ptserif text-sm font-black md:text-base">
+              <p className="font-ptserif text-xs font-black md:text-base">
                 {orderNumber}
               </p>
             </div>
           </div>
-          <h1 className="line-clamp-1 font-ptserif text-base font-black md:text-xl">
-            {title}
-          </h1>
-          <div className="flex flex-row gap-2 tracking-wide">
-            <p className="font-ptserif text-xs md:text-sm">Quantity: 1</p>
-            <p className="font-ptserif text-xs md:text-sm font-black">{price}</p>
+          <div className="flex flex-col gap-1">
+            <h1 className="line-clamp-1 font-ptserif text-base font-black md:text-xl">
+              {title}
+            </h1>
+            <div className="flex flex-row gap-2 tracking-wide">
+              <p className="font-ptserif text-xs md:text-sm">Quantity: 1</p>
+              <p className="font-ptserif text-xs md:text-sm font-black">{price}</p>
+            </div>
           </div>
           <div className="flex flex-col items-end">
             <button className="w-24 rounded-3xl border-[0.12rem] border-[#C11313] p-1 font-ptserif font-black text-[#C11313] hover:bg-[#C11313] hover:text-[#FAF1EA] md:w-28 md:text-lg">
