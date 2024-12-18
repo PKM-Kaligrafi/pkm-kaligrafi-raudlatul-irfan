@@ -48,7 +48,7 @@ export default function Login() {
       <img
         src="/webp/allCaligraphyRight.webp"
         alt="Login"
-        className="h-full w-1/2 rounded-l-3xl object-cover"
+        className="hidden h-full w-1/2 rounded-l-3xl object-cover md:flex"
       />
       <div className="relative flex h-full w-full flex-col justify-center rounded-3xl bg-white md:w-1/2 md:rounded-l-none md:rounded-r-3xl">
         <h1 className="text-center text-3xl font-bold">Login</h1>
@@ -77,6 +77,7 @@ export default function Login() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="email"
               aria-label="Email address"
+              placeholder="Email"
             />
           </div>
           <div className="relative w-4/5 rounded-full border-2 border-black">
@@ -96,6 +97,7 @@ export default function Login() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="password"
               aria-label="Password"
+              placeholder="Password"
             />
           </div>
           <button

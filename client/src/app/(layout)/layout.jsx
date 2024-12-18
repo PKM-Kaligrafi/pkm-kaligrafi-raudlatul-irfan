@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   return (
     <>
       {!isAdminPage && <NavigationBar />}
-      <main className="min-h-screen md:pt-20">{children}</main>
+      <main className="min-h-screen pt-16 md:pt-20">{children}</main>
       {!isAdminPage && <Footer />}
     </>
   );

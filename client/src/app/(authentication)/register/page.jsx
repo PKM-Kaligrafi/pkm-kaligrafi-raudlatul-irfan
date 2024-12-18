@@ -102,6 +102,7 @@ export default function Register() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="username"
               aria-label="Username"
+              placeholder="Username"
             />
           </div>
 
@@ -122,6 +123,7 @@ export default function Register() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="address"
               aria-label="Address"
+              placeholder="Address"
             />
           </div>
 
@@ -142,6 +144,7 @@ export default function Register() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="phoneNumber"
               aria-label="Phone Number"
+              placeholder="Phone Number"
             />
           </div>
 
@@ -162,6 +165,7 @@ export default function Register() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="email"
               aria-label="Email"
+              placeholder="Email"
             />
           </div>
 
@@ -182,6 +186,7 @@ export default function Register() {
               className="w-full rounded-full px-2 py-1 pl-10"
               id="password"
               aria-label="Password"
+              placeholder="Password"
             />
           </div>
 
@@ -197,7 +202,7 @@ export default function Register() {
           </Link>
         </form>
 
-        <div className="mt-4 flex flex-col items-center gap-4 md:hidden">
+        {/* <div className="mt-4 flex flex-col items-center gap-4 md:hidden">
           <div className="flex w-4/5 items-center">
             <hr className="flex-grow border-t border-black" />
             <span className="mx-2">Or</span>
@@ -207,12 +212,12 @@ export default function Register() {
           <button className="w-4/5 rounded-full border-2 border-black py-1 font-bold">
             Google
           </button>
-        </div>
+        </div> */}
       </div>
       <img
         src="/webp/allCaligraphyLeft.webp"
         alt="Register"
-        className="h-full w-1/2 rounded-r-3xl object-cover"
+        className="hidden h-full w-1/2 rounded-r-3xl object-cover md:flex"
       />
     </div>
   );
