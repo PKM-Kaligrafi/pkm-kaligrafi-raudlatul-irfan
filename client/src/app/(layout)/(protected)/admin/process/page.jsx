@@ -87,7 +87,7 @@ export default function Process() {
                 Order Process
               </h1>
 
-              <div className="overflow-x-auto rounded-lg shadow-md">
+              <div className="w-3/5 overflow-x-scroll rounded-lg shadow-md 2xl:overflow-hidden">
                 <table className="w-full text-left font-ptserif text-sm tracking-wide text-[#FAF1EA]">
                   <thead className="bg-[#014E3E] text-xs uppercase text-[#FAF1EA]">
                     <tr>

@@ -86,7 +86,7 @@ export default function Admin() {
               className="relative flex aspect-square w-3/12 items-center justify-center rounded-2xl bg-[#092928] shadow-lg md:aspect-[16/10] md:rounded-3xl dark:shadow-gray-600"
             >
               <div className="flex flex-col items-center justify-center gap-3">
-                <p className="absolute top-0 my-2 font-ptserif text-sm font-medium tracking-wider text-[#FAF1EA] md:text-lg">
+                <p className="absolute -top-8 my-2 font-ptserif text-sm font-medium tracking-wider text-[#092928] md:text-lg lg:top-0 lg:text-[#FAF1EA]">
                   Order
                 </p>
                 <p className="font-ptserif text-4xl font-black text-[#FAF1EA]">
@@ -99,7 +99,7 @@ export default function Admin() {
               className="relative flex aspect-square w-3/12 items-center justify-center rounded-2xl bg-[#092928] shadow-lg md:aspect-[16/10] md:rounded-3xl dark:shadow-gray-600"
             >
               <div className="flex flex-col items-center justify-center gap-3">
-                <p className="absolute top-0 my-2 font-ptserif text-sm font-medium tracking-wider text-[#FAF1EA] md:text-lg">
+                <p className="absolute -top-8 my-2 font-ptserif text-sm font-medium tracking-wider text-[#092928] md:text-lg lg:top-0 lg:text-[#FAF1EA]">
                   Process
                 </p>
                 <p className="font-ptserif text-4xl font-black text-[#FAF1EA]">
@@ -112,7 +112,7 @@ export default function Admin() {
               className="relative flex aspect-square w-3/12 items-center justify-center rounded-2xl bg-[#092928] shadow-lg md:aspect-[16/10] md:rounded-3xl dark:shadow-gray-600"
             >
               <div className="flex flex-col items-center justify-center gap-3">
-                <p className="absolute top-0 my-2 font-ptserif text-sm font-medium tracking-wider text-[#FAF1EA] md:text-lg">
+                <p className="absolute -top-8 my-2 font-ptserif text-sm font-medium tracking-wider text-[#092928] md:text-lg lg:top-0 lg:text-[#FAF1EA]">
                   Item
                 </p>
                 <p className="font-ptserif text-4xl font-black text-[#FAF1EA]">

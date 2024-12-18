@@ -68,10 +68,13 @@ const Profile = () => {
             </div>
           </div>
           <div className="my-10 flex items-center justify-center gap-5 md:mt-0 md:justify-start">
-            <button className="h-12 rounded-full border border-black px-10 py-1 shadow-lg md:text-2xl dark:shadow-gray-400">
+            <Link
+              href="/profile/edit"
+              className="h-12 rounded-full border border-black px-10 py-1 shadow-lg md:text-2xl dark:shadow-gray-400"
+            >
               Edit
-            </button>
-            <Link href="/profile/cart">
+            </Link>
+            <Link href="/cart">
               <div className="h-10 w-10 rounded-full bg-[#092928] shadow-lg dark:shadow-gray-400">
                 <img
                   src="/svg/icon/cart.svg"

@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { getData } from "@/api/apiClient";
+import { getData, updateData } from "@/api/apiClient";
 import { useEffect, useState } from "react";
+import { isUserSignedIn } from "@/api/auth";
+import Link from "next/link";
 
 export default function Content({ params }) {
   const [selectedItem, setSelectedItems] = useState([]);
+  const [userId, setUserId] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,9 +20,30 @@ export default function Content({ params }) {
         console.error("Error fetching data:", error);
       }
     };
+    const fetchUser = async () => {
+      const user = await isUserSignedIn();
+      if (!user) return;
+      setUserId(user.uid);
+    };
+
+    fetchUser();
 
     fetchData();
   }, []);
+
+  const addToCart = async () => {
+    try {
+      const response = await updateData(
+        `users/${userId}/cart`,
+        params.uid,
+        selectedItem,
+      );
+      console.log("Item added to cart:", response.data);
+      window.location.href = "/cart";
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   return (
     <div id="mainService" className="flex flex-col gap-8 py-12">
@@ -45,9 +69,21 @@ export default function Content({ params }) {
               <p className="my-3 text-center font-ptserif text-xl font-bold">
                 Rp. {selectedItem.price}
               </p>
-              <button className="w-44 rounded-full border border-black py-1 font-ptserif text-lg font-bold shadow-xl hover:border-[#092928] hover:bg-[#092928] hover:text-[#FAF1EA]">
-                Check Out
-              </button>
+              {userId ? (
+                <button
+                  onClick={addToCart}
+                  className="w-44 rounded-full border border-black py-1 font-ptserif text-lg font-bold shadow-xl hover:border-[#092928] hover:bg-[#092928] hover:text-[#FAF1EA]"
+                >
+                  Add to Cart
+                </button>
+              ) : (
+                <Link
+                  href="/login"
+                  className="w-44 rounded-full border border-black py-1 font-ptserif text-lg font-bold shadow-xl hover:border-[#092928] hover:bg-[#092928] hover:text-[#FAF1EA]"
+                >
+                  Sign in to add to cart
+                </Link>
+              )}
             </div>
           </div>
         </div>
