@@ -34,17 +34,36 @@ export default function Admin() {
   useEffect(() => {
     const fetchCounts = async () => {
       try {
-        const orderDataResponse = await getAllData("orders");
-        const orderData = orderDataResponse.data;
-        setOrderCount(orderData.length);
+        // Fetch users first
+        const usersResponse = await getAllData("users");
+        const users = usersResponse.data;
 
-        const processDataResponse = await getAllData("process");
-        const processData = processDataResponse.data;
-        setProcessCount(processData.length);
+        let totalOrderCount = 0;
+        let totalProcessCount = 0;
+        let totalItemCount = 0;
 
-        const itemDataResponse = await getAllData("items");
-        const itemData = itemDataResponse.data;
-        setItemCount(itemData.length);
+        // Loop over each user to fetch their specific data
+        for (const user of users) {
+          const userId = user.id;
+
+          // Fetch order count for the user
+          const orderDataResponse = await getAllData(`users/${userId}/order`);
+          totalOrderCount += orderDataResponse.data.length;
+
+          // Fetch process count for the user
+          const processDataResponse = await getAllData(
+            `users/${userId}/process`,
+          );
+          totalProcessCount += processDataResponse.data.length;
+        }
+
+        const itemsResponse = await getAllData("kaligraphyItem");
+        totalItemCount = itemsResponse.data.length;
+
+        // Update the state with the totals
+        setOrderCount(totalOrderCount);
+        setProcessCount(totalProcessCount);
+        setItemCount(totalItemCount);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

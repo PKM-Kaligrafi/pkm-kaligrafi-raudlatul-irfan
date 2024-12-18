@@ -45,7 +45,7 @@ export default function Process() {
       console.log("Process deleted successfully");
       window.location.reload();
     } catch (error) {
-      console.error("Error deleting process:", error);
+      console.error("Error deleting order:", error);
     }
   };
 
